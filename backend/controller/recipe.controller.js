@@ -212,7 +212,7 @@ export const updateByIdRecipe = async (req, res) => {
         const data = {
             title: recipeExist.title,
             author: recipeExist.author,
-            difficulty: difficulty || recipeExist.difficult,
+            difficulty: difficulty || recipeExist.difficulty,
             prepTime: recipeExist.prepTime,
             cookTime: recipeExist.cookTime,
             ingredients: recipeExist.ingredients,
@@ -286,7 +286,7 @@ export const updateByTitleRecipe = async (req, res) => {
         const data = {
             title: recipeExist.title,
             author: recipeExist.author,
-            difficulty: recipeExist.difficult,
+            difficulty: recipeExist.difficulty,
             prepTime: prepTime || recipeExist.prepTime,
             cookTime: cookTime || recipeExist.cookTime,
             ingredients: recipeExist.ingredients,
